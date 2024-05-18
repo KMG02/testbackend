@@ -1,0 +1,24 @@
+{
+  "name": "firstbackend",
+  "version": "1.0.0",
+  "description": "it is a test backend deployment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [
+    "first",
+    "backend",
+    "karan"
+  ],
+  "author": "karan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
