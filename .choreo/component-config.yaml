@@ -1,0 +1,41 @@
+version: 1.0.0
+
+component:
+  name: my-component
+  type: service
+
+dependencies:
+  - name: dependency1
+    version: 2.1.0
+  - name: dependency2
+    version: 1.3.5
+
+environment:
+  variables:
+    ENV_VAR_1: value1
+    ENV_VAR_2: value2
+
+services:
+  - name: my-service
+    type: REST
+    url: https://api.example.com
+    method: GET
+    timeout: 30s
+
+logging:
+  level: info
+  output: console
+
+healthcheck:
+  path: /health
+  interval: 60s
+  timeout: 10s
+
+resources:
+  memory: 512MB
+  cpu: 1
+
+security:
+  authentication:
+    type: apiKey
+    headerName: Authorization
